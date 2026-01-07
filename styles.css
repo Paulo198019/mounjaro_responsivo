@@ -73,3 +73,7 @@ h3 { font-size: 1.05rem; margin: 0 0 6px 0; }
   .grid-3 { grid-template-columns: 1fr; }
   .hero-inner { align-content: end; padding: 56px 0; }
 }
+
+/* Esconder o item do FAQ "Posso comprar sem receita?" */
+#faq details:has(> summary:where(:;#faq details:has(> summary:where(:is(:not(:has(*)))):contains("Posso comprar sem receita?")) {
+}
